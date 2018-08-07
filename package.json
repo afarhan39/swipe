@@ -1,0 +1,21 @@
+{
+  "name": "empty-project-template",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "exp start",
+    "android": "exp start --android",
+    "ios": "exp start --ios",
+    "eject": "exp eject"
+  },
+  "dependencies": {
+    "expo": "^29.0.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "jsxBracketSameLine": true
+  }
+}
