@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text, ScrollView } from 'react-native'
+import { StyleSheet, View, Text, ScrollView, YellowBox } from 'react-native'
 import { Card, Button } from 'react-native-elements'
 import Deck from './src/Deck'
+
+YellowBox.ignoreWarnings(['Remote debugger is in a background'])
 
 const DATA = [
   {
@@ -55,7 +57,7 @@ export default class App extends Component {
           icon={{ name: 'code' }}
           backgroundColor={'#03A9F4'}
           title={'View Now!'}
-          onPress={() => console.log()}
+          onPress={() => console.log('heyyy')}
         />
       </Card>
     )
