@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text, ScrollView, YellowBox } from 'react-native'
+import { StyleSheet, View, Text, YellowBox } from 'react-native'
 import { Card, Button } from 'react-native-elements'
 import Deck from './src/Deck'
 
@@ -65,11 +65,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <Deck data={DATA} renderCard={this.renderCard} />
-        </View>
-      </ScrollView>
+      <View style={styles.container}>
+        <Deck data={DATA} renderCard={this.renderCard} />
+      </View>
     )
   }
 }
