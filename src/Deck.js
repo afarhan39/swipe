@@ -38,7 +38,7 @@ export default class Deck extends Component {
       }
     })
 
-    this.state = { panResponder, position }
+    this.state = { panResponder, position, index: 0 }
   }
 
   forceSwipe(toRight) {
@@ -46,7 +46,16 @@ export default class Deck extends Component {
     Animated.timing(this.state.position, {
       toValue: { x, y: 0 },
       duration: SWIPE_OUT_DURATION
-    }).start(() => (toRight ? this.swipeRight() : this.swipeLeft()))
+    }).start(() => {
+      this.swipeCompleted(toRight)
+    })
+  }
+
+  swipeCompleted(toRight) {
+    const item = this.props.data[this.state.index]
+    this.setState({ index: this.state.index + 1 })
+    this.state.position.setValue({ x: 0, y: 0 })
+    toRight ? this.swipeRight() : this.swipeLeft()
   }
 
   swipeRight() {
@@ -75,8 +84,15 @@ export default class Deck extends Component {
   }
 
   renderCards() {
-    return this.props.data.map((item, index) => {
-      if (index === 0) {
+    return this.props.data.map((item, i) => {
+      if (this.state.index === this.props.data.length) {
+        return <Text>Empty ady</Text>
+      }
+
+      if (i < this.state.index) {
+        return null
+      }
+      if (i === this.state.index) {
         return (
           <Animated.View
             key={item.id}
