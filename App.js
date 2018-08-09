@@ -49,6 +49,22 @@ const DATA = [
 ]
 
 export default class App extends Component {
+  renderNoMoreCards() {
+    return (
+      <Card title={'All done!'}>
+        <Text style={{ marginBottom: 10 }}>
+          Hey, deck is now empty. Wanna load some more?
+        </Text>
+        <Button
+          icon={{ name: 'code' }}
+          backgroundColor={'#03A9F4'}
+          title={'Load Now!'}
+          onPress={() => console.log('heyyy')}
+        />
+      </Card>
+    )
+  }
+
   renderCard(item) {
     return (
       <Card key={item.id} title={item.text} image={{ uri: item.uri }}>
@@ -66,7 +82,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Deck data={DATA} renderCard={this.renderCard} />
+        <Deck
+          data={DATA}
+          renderCard={this.renderCard}
+          renderNoMoreCards={this.renderNoMoreCards}
+        />
       </View>
     )
   }

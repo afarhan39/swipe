@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6638df50-43d1-45da-b414-aec87dacc012" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,16 +46,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2149" />
+          <entry key="js" value="2899" />
           <entry key="json" value="39" />
-          <entry key="txt" value="255" />
+          <entry key="txt" value="340" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="39" />
-          <entry key="JavaScript" value="2149" />
-          <entry key="PLAIN_TEXT" value="255" />
+          <entry key="JavaScript" value="2899" />
+          <entry key="PLAIN_TEXT" value="340" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -66,11 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+            <state relative-caret-position="114">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
                 <element signature="e#133#1073#0" />
@@ -96,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26">
+            <state relative-caret-position="165">
               <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
               <folding>
                 <element signature="e#29#69#0" expanded="true" />
@@ -119,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Deck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="101">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#29#69#0" expanded="true" />
               </folding>
@@ -159,9 +160,9 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Home.js" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/src/Ball.js" />
         <option value="$PROJECT_DIR$/src/Deck.js" />
+        <option value="$PROJECT_DIR$/App.js" />
       </list>
     </option>
   </component>
@@ -323,11 +324,25 @@
       <option name="project" value="LOCAL" />
       <updated>1533721779021</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="detect which direction swipe is">
+      <created>1533781655406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533781655406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="repopulate list after swiping out top card">
+      <created>1533792838734</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533792838734</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14616000" />
+    <option name="totallyTimeSpent" value="17139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="23" width="983" height="726" extended-state="0" />
@@ -367,7 +382,9 @@
     <MESSAGE value="removed ScrollView&#10;added Dimensions to get actual screen width" />
     <MESSAGE value="added resetPosition" />
     <MESSAGE value="added swipe threshold" />
-    <option name="LAST_COMMIT_MESSAGE" value="added swipe threshold" />
+    <MESSAGE value="detect which direction swipe is" />
+    <MESSAGE value="repopulate list after swiping out top card" />
+    <option name="LAST_COMMIT_MESSAGE" value="repopulate list after swiping out top card" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -432,20 +449,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <element signature="e#133#1073#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ball.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
+        <state relative-caret-position="165">
           <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
           <folding>
             <element signature="e#29#69#0" expanded="true" />
@@ -455,10 +461,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Deck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        <state relative-caret-position="101">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#29#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#133#1073#0" />
           </folding>
         </state>
       </provider>
