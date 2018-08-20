@@ -49,7 +49,16 @@ const DATA = [
 ]
 
 export default class App extends Component {
-  renderNoMoreCards() {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      data: DATA
+    }
+  }
+
+  renderNoMoreCards = thiss => {
+    console.log(thiss)
     return (
       <Card title={'All done!'}>
         <Text style={{ marginBottom: 10 }}>
@@ -59,7 +68,7 @@ export default class App extends Component {
           icon={{ name: 'code' }}
           backgroundColor={'#03A9F4'}
           title={'Load Now!'}
-          onPress={() => console.log('heyyy')}
+          onPress={() => thiss.setState({ index: 0 })}
         />
       </Card>
     )
@@ -83,7 +92,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Deck
-          data={DATA}
+          data={this.state.data}
           renderCard={this.renderCard}
           renderNoMoreCards={this.renderNoMoreCards}
         />

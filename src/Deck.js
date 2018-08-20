@@ -43,12 +43,6 @@ export default class Deck extends Component {
     this.state = { panResponder, position, index: 0 }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.data !== this.props.data) {
-      this.setState({ index: 0 })
-    }
-  }
-
   componentWillUpdate() {
     UIManager.setLayoutAnimationEnabledExperimental &&
       UIManager.setLayoutAnimationEnabledExperimental(true)
@@ -99,7 +93,7 @@ export default class Deck extends Component {
 
   renderCards() {
     if (this.state.index === this.props.data.length) {
-      return this.props.renderNoMoreCards()
+      return this.props.renderNoMoreCards(this)
     }
     return this.props.data
       .map((item, i) => {
